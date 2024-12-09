@@ -1,0 +1,129 @@
+/* Reset some default browser styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling for the navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+#navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the welcome section */
+#welcome-section {
+    height: 80vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+/* Styling for the projects section */
+#projects {
+    padding: 20px;
+    background: #fff;
+        height: 80vh; /* Full viewport height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+}
+
+.project-tile {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.project-tile h2 {
+    margin-bottom: 10px;
+}
+
+.project-tile a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+#profile-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    text-decoration: underline;
+}
+
+/*Styling for the about*/
+#about {
+    height: 80vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #navbar nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    .project-tile {
+        padding: 10px;
+    }
+
+}
